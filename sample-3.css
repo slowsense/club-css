@@ -4,5 +4,9 @@
     height: 200px;
 /* A gradient at the center of its container,
    starting red, changing to blue, and finishing green */
-   background: radial-gradient(circle at center, red 0, blue, transparent 70%)
+   background: radial-gradient(circle at center, red 0, blue)
+}
+
+.radial-square:hover {
+    box-shadow: -15px 10px 5px blueviolet;
 }
