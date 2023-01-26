@@ -1,6 +1,11 @@
 <html>
 
 <head>
+    
+    <link rel="stylesheet"
+    href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
     <title>Club CSS</title>
     <link rel="stylesheet" href="index.css" type="text/css" />
     <link rel="stylesheet" href="sample-1.css" type="text/css" />
@@ -9,24 +14,71 @@
 </head>
 
 <body>
+
     <h1>Club CSS !</h1>
 
-    <h2>Faire un dégradé simple</h2>
+    <div class="content">
 
-    <div class="gradient-square">
-    </div>
+        <!-- Code example 1 -->
+        <div class="code-example">
+            <h2>Faire un dégradé simple</h2>
+            <pre>
+                <code class="language-css">
+.gradient-square {
+    background: linear-gradient(45deg, #e66465, 25%, #9198e5 );
+}
+                </code>
+             </pre>
+        </div>
+        
+        <!-- Example 1 -->
+        <div class="example">
+            <div class="gradient">
+            </div>
+        </div>
+
+        <!-- Code example 2 -->
+        <div class="code-example">
+            <h2>Faire un dégradé multiple</h2>
+            <pre>
+                <code class="language-css">
+.repeating-gradient {
+    background: repeating-linear-gradient(0deg, #9198e5, #e66465 70px, #9198e5 30px);
+}
+                </code>
+             </pre>
+        </div>
+        
+        <!-- Example 2 -->
+        <div class="example">
+            <div class="repeating-gradient">
+            </div>
+        </div>
+
     
-
-    <h2>Faire un dégradé multiple</h2>
-
-    <div class="repeating-gradient-square">
+        <!-- Code example 3 -->
+        <div class="code-example">
+            <h2>Faire un dégradé radial</h2>
+            <pre>
+                <code class="language-css">
+.radial-square {
+/* A gradient at the center of its container,
+    starting red, changing to blue, and finishing green */
+    background: radial-gradient(circle at center, red 0, blue)
+}
+    
+.radial-square:hover {
+    box-shadow: -15px 10px 5px blueviolet;
+}
+                </code>
+             </pre>
+        </div>
+        
+        <!-- Example 3 -->
+        <div class="example">
+            <div class="radial-square">
+            </div>
+        </div>
     </div>
-
-
-    <h2>Faire un dégradé radial</h2>
-
-    <div class="radial-square">
-    </div>
-
 </body>
 </html>

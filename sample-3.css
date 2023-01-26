@@ -1,7 +1,4 @@
 .radial-square {
-    margin: 10px;
-    width: 200px;
-    height: 200px;
 /* A gradient at the center of its container,
    starting red, changing to blue, and finishing green */
    background: radial-gradient(circle at center, red 0, blue)
